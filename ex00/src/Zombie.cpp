@@ -6,7 +6,14 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 03:31:34 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/05/12 03:31:35 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/05/12 04:18:18 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+
+Zombie(std::string name){}
+
+~Zombie(void){}
+
+void announce(void){}
