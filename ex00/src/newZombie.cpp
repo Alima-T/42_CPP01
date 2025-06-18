@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 03:31:30 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/06/18 17:14:30 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/06/18 17:18:13 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,4 @@
 Zombie* newZombie(std::string name)
 {
 	return new Zombie(name);
-};
+}
