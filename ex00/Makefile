@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/06/18 16:58:58 by aokhapki          #+#    #+#              #
+#    Updated: 2025/06/18 17:03:03 by aokhapki         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # Directories
 SRC_DIR = src
 INC_DIR = include
@@ -33,7 +45,7 @@ $(NAME): $(OBJS)
 
 # Create the object directory and compile object files into obj/
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
-	@mkdir -p $(OBJ_DIR)   # Make sure the obj/ directory exists
+	@mkdir -p $(OBJ_DIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Remove object files

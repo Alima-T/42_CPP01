@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 03:31:38 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/05/12 04:04:40 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/06/18 17:07:06 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,11 @@ private:
 	std::string name;
 
 public:
-	Zombie(std::string name);
-	~Zombie(void);
-	void announce(void);
+	// Zombie(void);//default constructor
+	Zombie(std::string name);//parametried constructor
+	~Zombie(void); // desctructor
+	void announce(void);//to speak
+	// void setName(std::string name);
 };
 
 // Function prototypes
