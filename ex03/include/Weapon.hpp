@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/11 01:32:10 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/11 21:22:07 by aokhapki         ###   ########.fr       */
+/*   Created: 2025/07/10 21:44:27 by aokhapki          #+#    #+#             */
+/*   Updated: 2025/07/11 01:12:35 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANA_HPP
-#define HUMANA_HPP
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 
-#include<string>
-#include "Weapon.hpp"
+#include <string>
 
-class HumanA
+class Weapon
 {
 	private:
-	std::string m_name;
-	Weapon& weapon; // reference: always has a weapon
-
+		std::string m_type;
+		
 	public:
-	HumanA(const std::string& name, Weapon& weapon);
-	void attack() const;
+	
+		Weapon(const std::string& type);               // constructor
+    	const std::string& getType() const;            // getter (returns const ref)
+    	void setType(const std::string& newType);      // setter
 };
-
 
 #endif
