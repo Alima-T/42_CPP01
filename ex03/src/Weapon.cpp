@@ -6,13 +6,11 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 01:04:43 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/11 21:21:54 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/15 22:02:44 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
-
-Weapon::Weapon(const std::string& type){};
 
 Weapon::Weapon(const std::string& type) : m_type(type){};
 
