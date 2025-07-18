@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:22:08 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/18 20:37:35 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/18 21:58:28 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,3 @@ bool Replacer::tryReplaceInFile()
 
 	return true;
 }
-
-
-
-	
