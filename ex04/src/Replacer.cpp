@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:22:08 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/18 20:24:07 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/18 20:37:35 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ std::string Replacer::replaceAllInLine(const std::string& line)
 - hello.txt.replace  <-- new file with replaced content
 - if (outputFile.fail()) is an alternative to if (!outputFile)
 - is_open() checks only if the file is open: so must be used with fail (if (!outputFile.is_open() || outputFile.fail())
+- Since inputFile/outputFile objects are local vars inside the function, they are destroyed at function exit, no needs to call close() explicitly.
 */
 bool Replacer::tryReplaceInFile()
 {
