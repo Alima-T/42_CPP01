@@ -6,17 +6,16 @@
 #    By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/10 19:50:38 by aokhapki          #+#    #+#              #
-#    Updated: 2025/07/10 20:09:46 by aokhapki         ###   ########.fr        #
+#    Updated: 2025/07/15 21:23:45 by aokhapki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC_DIR = src
 INC_DIR = include
 OBJ_DIR = obj
-MAIN_DIR = main
 RM = rm -f
 
-SRC = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(MAIN_DIR)/*.cpp)
+SRC = $(wildcard $(SRC_DIR)/*.cpp)
 OBJ = $(SRC:.cpp=.o)
 
 NAME = violance

@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 01:46:09 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/11 21:21:49 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/15 21:40:43 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,10 @@
 // Has references
 // Has const members
 // Needs better performance
+//Сначала вызывается конструктор по умолчанию , затем перезаписывается.  Дополнительная работа (создать → назначить
 
 HumanA::HumanA(const std::string& name, Weapon& weapon)
-	: m_name(name), weapon(weapon){};
+	: m_name(name), weapon(weapon){}
 	
 void HumanA::attack()const
 {

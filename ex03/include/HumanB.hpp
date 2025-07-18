@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/11 01:04:43 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/15 22:02:44 by aokhapki         ###   ########.fr       */
+/*   Created: 2025/07/15 20:35:17 by aokhapki          #+#    #+#             */
+/*   Updated: 2025/07/15 21:03:08 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
+
+#include <string>
 #include "Weapon.hpp"
 
-Weapon::Weapon(const std::string& type) : m_type(type){};
-
-const std::string& Weapon::getType()const
+// weapon == NULL	C++98 uses NULL instead of nullptr (C++11+)
+class HumanB
 {
-	return this->m_type;
-}
+	private:
+	std::string m_name;
+	Weapon* m_weapon; // may be nullptr
 
-void Weapon::setType(const std::string& newType)
-{
-	this->m_type= newType;
-}
+	public:
+	HumanB(const std::string& name);
+	void setWeapon(Weapon& weapon);
+	void attack() const;
+};
+#endif
