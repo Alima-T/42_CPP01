@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 01:32:10 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/11 21:22:07 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/24 22:09:49 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,5 @@ class HumanA
 	HumanA(const std::string& name, Weapon& weapon);
 	void attack() const;
 };
-
 
 #endif
