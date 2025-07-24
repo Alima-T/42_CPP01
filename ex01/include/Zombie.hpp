@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 03:41:00 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/10 14:46:04 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/24 21:28:06 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,19 @@
 
 #include <string>
 
+/*
+Zombie(const std::string& name);
+
+- & reference - to avoid copying objects — we use a reference (an alias - another name for the same memory) 
+  to the original string. Changing the value through a reference changes the original!
+  It’s faster and more efficient, especially for large objects like std::string.
+- const means we promise not to modify the original string inside the constructor.
+*/
 class Zombie 
 {
 	private:
 		std::string m_name;
+	
 	public:
 		Zombie(void);
 		Zombie (const std::string& name);
