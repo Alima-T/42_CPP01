@@ -6,11 +6,11 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 03:40:52 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/24 20:28:41 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/24 23:14:24 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../include/Zombie.hpp"
 #include <iostream>
 
 Zombie::Zombie(void) : m_name("Noname") {}
@@ -30,7 +30,6 @@ void Zombie::announce(void) const
 	std::cout << this->m_name << ": BraiiiiinnnzzzZ..." << std::endl;
 }
 
-//(C++11) m_name = std::move(name); transferring ownership of resources instead of copying them 
 void Zombie::setName(const std::string& name)
 {
 	this->m_name = name;
