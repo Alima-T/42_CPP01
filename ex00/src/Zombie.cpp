@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 03:31:34 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/15 21:44:49 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/24 20:11:45 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,18 @@
 // Zombie::Zombie(void){};
 Zombie::Zombie(void)
 {
-	this->m_name = "Default"; // Default name
+	this->m_name = "Default";
 	std::cout << "Default Zombie object created" << std::endl;
 }
 
 // Constructor with a parameter to set the name of the Zombie
-// Zombie::Zombie(const std::string& name) : m_name(name) {}; /*- initializer list in C++11, when objects like strings or vectors.*/
+// Zombie::Zombie(const std::string& name) : m_name(name) {}; /*- initializer list*/
 Zombie::Zombie(const std::string& name)
 {
 	this->m_name = name;
 	std::cout << "Zombie object " << this->m_name << " created" << std::endl;
 }
-
+// Destructor
 Zombie::~Zombie(void)
 {
 	std::cout << this->m_name << " is destroyed" << std::endl;
