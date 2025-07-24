@@ -6,13 +6,18 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 20:14:44 by aokhapki          #+#    #+#             */
-/*   Updated: 2025/07/18 20:23:20 by aokhapki         ###   ########.fr       */
+/*   Updated: 2025/07/24 22:35:55 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Replacer.hpp"
 #include <iostream>
 
+/*
+We have to create a txt file and type some text: 
+Hello, hello! I am a test file. 
+Replace hello to hi
+*/
 int main(int ac, char **av)
 {
 	if(ac != 4)
